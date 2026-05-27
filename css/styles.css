@@ -1,0 +1,329 @@
+@font-face {
+    font-family: IBMPlexSansJP;
+    src: url(/fonts/IBMPlexSansJP-Bold.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/fonts/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --spacing-5:5px;
+    --spacing-10:10px;
+    --spacing-20:20px;
+    --spacing-30:30px;
+    --spacing-40:40px;
+    --spacing-50:50px;
+    --spacing-60:60px;
+    --spacing-70:70px;
+    --spacing-80:80px;
+    --spacing-90:90px;
+    --spacing-100:100px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 13px;
+    opacity: 85%;
+}
+
+a:hover {
+    opacity: 100%;
+}
+
+h1 {
+    font-size: 7vmin;
+    text-wrap: balance;
+    color: var(--color-light);
+    font-family: IBMPlexSansJP;
+    letter-spacing: -3px;
+}
+
+h3{
+    font-size: 2.5vmin;
+    text-wrap: balance;
+    color: var(--color-light);
+    font-family: IBMPlexSansJP;
+    font-weight: 100;
+}
+
+p {
+    font-size: 2.2vmin;
+    color: var(--color-light);
+    font-family: Manrope;
+    word-spacing: 3px;
+}
+
+.caixa-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-10);
+}
+
+.hero {
+    height: 100vh;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)), */
+    /* url(../images/motos/banner.jpg); */
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    color: var(--color-light);
+    padding-inline:var(--spacing-40);
+    text-align: center;
+}
+
+.header-hero {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-hero img {
+    width: 200px;
+}
+
+.menu-list {
+    display: flex;
+    gap: var(--spacing-60);
+
+}
+
+.titulo-hero {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: var(--spacing-60);
+}
+
+.titulo-hero h1 {
+    font-size: 10vmin;
+}
+
+.container-desafio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-50);
+
+}
+
+.container-desafio img {
+    width: 50%;
+}
+
+.container-desafio .caixa-texto {
+    width: 800px;
+    margin-bottom: 190px;
+}
+
+.container-robo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-50);
+
+}
+
+.container-robo img {
+    width: 50%;
+}
+
+.container-robo .caixa-texto {
+    width: 600px;
+}
+
+.container-robo h1 {
+    color: var(--color-dark);
+}
+
+.container-robo h3 {
+    color: var(--color-dark);
+}
+
+.container-robo p {
+    color: var(--color-dark);
+}
+
+.container-objetivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--spacing-100);
+}
+
+.grupo-objetivos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1050px;
+    margin-top: var(--spacing-100);
+}
+
+.item-objetivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.item-objetivos p {
+    width: 100%;
+}
+
+.container-publico-alvo {
+    width: 600px;
+    padding-top: 150px;
+    margin-left: 150px;
+
+}
+.container-publico-alvo .caixa-texto {
+    width: 600px;
+}
+
+.container-beneficios {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-right: 150px;
+    gap: var(--spacing-20);
+
+}
+.container-beneficios .caixa-texto {
+    width: 600px;
+}
+
+
+.beneficios-lista li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid var(--color-light);
+    padding-block: var(--spacing-30);
+    gap: var(--spacing-20);
+}
+
+.container-aplicacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-50);
+
+}
+
+.container-aplicacoes img {
+    width: 50%;
+}
+
+.container-aplicacoes .caixa-texto {
+    width: 600px;
+}
+
+.container-aplicacoes h1 {
+    color: var(--color-dark);
+}
+
+.container-aplicacoes h3 {
+    color: var(--color-dark);
+}
+
+.container-aplicacoes p {
+    color: var(--color-dark);
+}
+
+footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-30);
+}
+
+footer img {
+    width: 25%;
+}
+
+.nomes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-50);
+    padding-left: var(--spacing-20);
+    padding-block: var(--spacing-20);
+    border-left: 2px solid var(--color-light);
+}
+
+.section-desafio {
+    display: flex;
+    justify-content: center;
+    padding-inline: var(--spacing-50);
+} 
+
+.section-robo {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    padding-inline: var(--spacing-60);
+}
+
+.section-publico-alvo {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)),
+    url(../images/nasa-lugar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.section-beneficios {
+    height: 100vh;
+    background-image: url(../images/foguete-lua.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.section-aplicacoes {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: center;
+    padding-inline: var(--spacing-60);
+}
+
+section {
+    height: 100vh;
+}
