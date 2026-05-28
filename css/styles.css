@@ -77,8 +77,8 @@ p {
     color: var(--color-light);
     font-family: Manrope;
     word-spacing: 3px;
+    flex-wrap: balance;
 }
-
 
 .caixa-texto {
     display: flex;
@@ -94,13 +94,13 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    color: var(--color-light);
     padding-inline:var(--spacing-40);
     text-align: center;
 }
 
 .header-hero {
     height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,9 +116,11 @@ p {
 
 .menu-list {
     display: flex;
+    width: 100%;
     gap: var(--spacing-60);
-
+    flex-wrap:wrap;
 }
+
 
 .titulo-hero {
     height: calc(100vh - 100px);
@@ -133,6 +135,7 @@ p {
     font-size: 10vmin;
     animation: tracking-in-contract 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 
 @keyframes tracking-in-contract {
   0% {
@@ -157,12 +160,15 @@ p {
     overflow: hidden;
     transform: translateY(-50%);   
     animation: typewriter 1.5s steps(25) .1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
+}
 
+.p-titulo-hero {
+    width: auto;
 }
 
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 390px;}
+  to { width: 100%}
 }
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }
@@ -173,18 +179,17 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--spacing-50);
+    gap: var(--spacing-40);
+    width: 100%;
 
 }
 
 .container-desafio img {
-    width: 50%;
+    width: 45%;
     animation: fade-in both, fade-out linear;
     animation-timeline: view(), view();
     animation-range: entry, exit;
 }
-
-
 
 @keyframes fade-in {
     0% {
@@ -207,10 +212,8 @@ p {
     scale: .8;
   }
 }
-
-
 .container-desafio .caixa-texto {
-    width: 800px;
+    width: 700px;
     margin-bottom: 190px;
 }
 
@@ -219,12 +222,13 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-50);
+    gap: var(--spacing-10);
+    width: 100%;
 
 }
 
 .container-robo img {
-    width: 50%;
+    width: 45%;
     animation: fade-in both, fade-out linear;
     animation-timeline: view(), view();
     animation-range: entry, exit;
@@ -251,7 +255,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--spacing-100);
+    width: 100%;
 }
 
 .container-objetivos h1 {
@@ -273,9 +277,11 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1050px;
+    width: 100%;
     gap: var(--spacing-100);
-    margin-top: var(--spacing-100);
+    margin-top: var(--spacing-50);
+    padding-bottom: 100px;
+   
 }
 
 .item-objetivos {
@@ -289,7 +295,7 @@ p {
 }
 
 .item-objetivos img {
-    width: 100%;
+    width: 80%;
     margin-bottom: var(--spacing-30);
 
 }
@@ -299,26 +305,22 @@ p {
 }
 
 .container-publico-alvo {
-    width: 600px;
+    width: 100%;
     padding-top: 150px;
-    margin-left: 150px;
-
 }
 .container-publico-alvo .caixa-texto {
-    width: 600px;
+    width: 100%;
+    padding-left: 100px;
 }
 
 .container-beneficios {
-    width: 600px;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    margin-right: 150px;
-    gap: var(--spacing-20);
-
+    padding-right: 150px;
 }
 .container-beneficios .caixa-texto {
-    width: 600px;
+    width: 100%;
 }
 
 
@@ -343,12 +345,13 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-50);
+    gap: var(--spacing-10);
+    width: 100%;
 
 }
 
 .container-aplicacoes img {
-    width: 50%;
+    width: 45%;
     animation: fade-in both, fade-out linear;
     animation-timeline: view(), view();
     animation-range: entry, exit;
@@ -394,14 +397,21 @@ footer img {
 .section-desafio {
     display: flex;
     justify-content: center;
-    padding-inline: var(--spacing-50);
+    padding-inline: var(--spacing-50);;
 } 
 
 .section-robo {
     background-color: var(--color-light);
     display: flex;
     justify-content: center;
-    padding-inline: var(--spacing-60);
+    padding-inline: var(--spacing-100);
+}
+
+.section-objetivos {
+    display: flex;
+    justify-content: center;
+    padding-inline: var(--spacing-70);
+
 }
 
 .section-publico-alvo {
@@ -411,6 +421,8 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+    display: flex;
+    justify-content: start;
 }
 
 .section-beneficios {
@@ -427,7 +439,7 @@ footer img {
     background-color: var(--color-light);
     display: flex;
     justify-content: center;
-    padding-inline: var(--spacing-60);
+    padding-inline: var(--spacing-100);
 }
 
 section {
