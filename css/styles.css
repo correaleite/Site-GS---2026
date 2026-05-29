@@ -88,9 +88,8 @@ p {
 
 .hero {
     height: 100vh;
-    /* background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4)), */
-    /* url(../images/motos/banner.jpg); */
-    background-color: green;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)),
+    url(../images/fundo-lua-coventina.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -228,7 +227,7 @@ p {
 }
 
 .container-robo img {
-    width: 45%;
+    width: 40%;
     animation: fade-in both, fade-out linear;
     animation-timeline: view(), view();
     animation-range: entry, exit;
@@ -275,8 +274,8 @@ p {
 
 .grupo-objetivos {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: end;
     width: 100%;
     gap: var(--spacing-100);
     padding-top: var(--spacing-50);
@@ -287,9 +286,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     text-align: center;
     width: 100%;
+    margin-top: auto;
     gap: var(--spacing-10);
 }
 
@@ -350,7 +350,7 @@ p {
 }
 
 .container-aplicacoes img {
-    width: 45%;
+    width: 40%;
     animation: fade-in both, fade-out linear;
     animation-timeline: view(), view();
     animation-range: entry, exit;
